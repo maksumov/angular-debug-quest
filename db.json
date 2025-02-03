@@ -1,1 +1,75 @@
-{}
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne",
+      "publisher": "DC Comics",
+      "firstAppearance": "Detective Comics #27",
+      "powers": ["Intelligence", "Wealth", "Martial Arts", "Technology"]
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "alterEgo": "Clark Kent",
+      "publisher": "DC Comics",
+      "firstAppearance": "Action Comics #1",
+      "powers": ["Flight", "Super Strength", "Heat Vision", "Super Speed"]
+    },
+    {
+      "id": 3,
+      "name": "Wonder Woman",
+      "alterEgo": "Diana Prince",
+      "publisher": "DC Comics",
+      "firstAppearance": "All Star Comics #8",
+      "powers": ["Super Strength", "Flight", "Combat Skills", "Lasso of Truth"]
+    },
+    {
+      "id": 4,
+      "name": "Spider-Man",
+      "alterEgo": "Peter Parker",
+      "publisher": "Marvel Comics",
+      "firstAppearance": "Amazing Fantasy #15",
+      "powers": [
+        "Wall-Crawling",
+        "Super Strength",
+        "Spider-Sense",
+        "Web-Slinging"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Iron Man",
+      "alterEgo": "Tony Stark",
+      "publisher": "Marvel Comics",
+      "firstAppearance": "Tales of Suspense #39",
+      "powers": ["Genius Intelligence", "Powered Armor", "Wealth", "Flight"]
+    },
+    {
+      "id": 6,
+      "name": "Thor",
+      "alterEgo": "Thor Odinson",
+      "publisher": "Marvel Comics",
+      "firstAppearance": "Journey into Mystery #83",
+      "powers": [
+        "Super Strength",
+        "Weather Control",
+        "Mjolnir Control",
+        "Longevity"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Black Panther",
+      "alterEgo": "T'Challa",
+      "publisher": "Marvel Comics",
+      "firstAppearance": "Fantastic Four #52",
+      "powers": [
+        "Enhanced Strength",
+        "Enhanced Speed",
+        "Vibranium Suit",
+        "Combat Skills"
+      ]
+    }
+  ]
+}
