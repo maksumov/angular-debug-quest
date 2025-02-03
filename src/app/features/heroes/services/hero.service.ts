@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { Hero } from '../models/hero.model';
+import { HeroWithFavorite } from '../models/hero-favorite.model';
 
 @Injectable({
   providedIn: 'root',
@@ -13,5 +14,9 @@ export class HeroService {
 
   getHeroes(): Observable<Hero[]> {
     return this.http.get<Hero[]>(this.apiUrl);
+  }
+
+  getHeroesWithFavorite(): Observable<HeroWithFavorite[]> {
+    return this.http.get<HeroWithFavorite[]>(this.apiUrl);
   }
 }
