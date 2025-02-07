@@ -1,59 +1,44 @@
-# AngularDebugQuest
+# Angular Debug Quest
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+- Want to sharpen your skills at fixing bugs in Angular applications for a better understanding of the framework?
+- Need to train for a technical interview?
 
-## Development server
+This project is for you!
 
-To start a local development server, run:
+## The idea
 
-```bash
-ng serve
-```
+The idea is simple. The application is full of bugs. Your task is to fix them.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+It's completely up to you to choose your strategy and to identify each bug!
 
-## Code scaffolding
+Some of them might be easy to spot with a runtime error, but some of them might be tricky and require to understand what the code is aiming for.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## How to play
 
-```bash
-ng generate component component-name
-```
+1. Clone the repository
+2. Run `npm install` to install the dependencies
+3. Run `ng serve` to start the application
+4. Open the application in your browser
+5. Fix the bugs
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Scope of the project
 
-```bash
-ng generate --help
-```
+The project is a simple Angular application with unrelated features to cover a wide scope of bugs.
 
-## Building
+## Scope of the bugs
 
-To build the project run:
+The bugs are meant to test your knowledge of Angular.
 
-```bash
-ng build
-```
+## Limitations
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+This project is meant to be a training ground, not a production application following modern best practices.
+Not only you might find some inconsistencies in the code but incompleted features.
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## What's next?
 
-```bash
-ng test
-```
+### You identified a bug?
 
-## Running end-to-end tests
+Being able not only to use Angular but to fix errors is the first step at mastering it! The next one is to be able to explain what you did!
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Share your solution with the community on social media!
