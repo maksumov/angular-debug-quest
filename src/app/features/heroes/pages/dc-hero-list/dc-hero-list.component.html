@@ -28,8 +28,8 @@
         </tr>
       </thead>
       <tbody class="bg-white divide-y divide-gray-200">
-        @for (hero of filteredDCHeroes; track hero.id) {
-        <tr class="hover:bg-gray-50">
+        @for (hero of heroes; track hero.id) {
+        <tr [routerLink]="['/', hero.id]" class="hover:bg-gray-50">
           <td class="px-6 py-4 whitespace-nowrap">
             <div class="text-sm font-medium text-gray-900">{{ hero.name }}</div>
           </td>

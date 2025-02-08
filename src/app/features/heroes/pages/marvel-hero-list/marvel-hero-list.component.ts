@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HeroService } from '../../services/hero.service';
 import { HeroWithFavorite } from '../../models/hero-favorite.model';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-marvel-hero-list',
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   templateUrl: './marvel-hero-list.component.html',
 })
 export class MarvelHeroListComponent implements OnInit {

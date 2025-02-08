@@ -19,4 +19,8 @@ export class HeroService {
   getHeroesWithFavorite(): Observable<HeroWithFavorite[]> {
     return this.http.get<HeroWithFavorite[]>(this.apiUrl);
   }
+
+  getHeroById(id: string): Observable<Hero> {
+    return this.http.get<Hero>(`${this.apiUrl}/${id}`);
+  }
 }
