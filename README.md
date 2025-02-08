@@ -17,9 +17,10 @@ Some of them might be easy to spot with a runtime error, but some of them might 
 
 1. Clone the repository
 2. Run `npm install` to install the dependencies
-3. Run `ng serve` to start the application
-4. Open the application in your browser
-5. Fix the bugs
+3. Run `npm run server` to start the JSON server
+4. Run `ng serve` to start the application
+5. Open the application in your browser
+6. Fix the bugs
 
 ## Scope of the project
 
@@ -31,9 +32,7 @@ The bugs are meant to test your knowledge of Angular.
 
 ## Limitations
 
-This project is meant to be a training ground, not a production application following modern best practices.
-Not only you might find some inconsistencies in the code but incompleted features.
-
+This project is meant to be a training ground, not a production application following modern best practices. Not only you might find some inconsistencies in the code but incompleted features.
 
 ## What's next?
 
