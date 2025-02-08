@@ -1,3 +1,7 @@
+<p align="center">
+ <img width="60%" height="60%" src="./public/angular-debug-quest.png" alt="project logo">
+</p>
+
 # Angular Debug Quest
 
 - Want to sharpen your skills at fixing bugs in Angular applications for a better understanding of the framework?
