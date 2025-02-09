@@ -10,4 +10,4 @@ export interface Sock {
 export interface CartItem {
   sock: Sock;
   quantity: number;
-} 
+}

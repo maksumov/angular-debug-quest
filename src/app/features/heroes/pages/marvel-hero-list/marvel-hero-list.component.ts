@@ -15,12 +15,12 @@ export class MarvelHeroListComponent implements OnInit {
   constructor(private heroService: HeroService) {}
 
   ngOnInit(): void {
-    this.heroService.getHeroesWithFavorite().subscribe((heroes) => {
+    this.heroService.getHeroesWithFavorite().subscribe(heroes => {
       this.heroes = heroes;
     });
   }
 
   getFavoriteHeroes(): HeroWithFavorite[] {
-    return this.heroes.filter((hero) => hero.isFavorite);
+    return this.heroes.filter(hero => hero.isFavorite);
   }
 }

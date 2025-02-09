@@ -21,25 +21,23 @@ export class CartService {
 
   addToCart(sock: Sock) {
     const currentCart = this.cart();
-    const existingItem = currentCart.find((item) => item.sock.id === sock.id);
+    const existingItem = currentCart.find(item => item.sock.id === sock.id);
 
     if (existingItem) {
-      this.cart.update((items) =>
-        items.map((item) =>
+      this.cart.update(items =>
+        items.map(item =>
           item.sock.id === sock.id
             ? { ...item, quantity: item.quantity + 1 }
             : item
         )
       );
     } else {
-      this.cart.update((items) => [...items, { sock, quantity: 1 }]);
+      this.cart.update(items => [...items, { sock, quantity: 1 }]);
     }
   }
 
   removeFromCart(sockId: number) {
-    this.cart.update((items) =>
-      items.filter((item) => item.sock.id !== sockId)
-    );
+    this.cart.update(items => items.filter(item => item.sock.id !== sockId));
   }
 
   updateQuantity(sockId: number, quantity: number) {
@@ -48,8 +46,8 @@ export class CartService {
       return;
     }
 
-    this.cart.update((items) =>
-      items.map((item) =>
+    this.cart.update(items =>
+      items.map(item =>
         item.sock.id === sockId ? { ...item, quantity } : item
       )
     );

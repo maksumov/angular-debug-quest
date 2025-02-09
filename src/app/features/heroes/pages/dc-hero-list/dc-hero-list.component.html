@@ -6,51 +6,50 @@
       <thead class="bg-gray-50">
         <tr>
           <th
-            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-          >
+            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
             Name
           </th>
           <th
-            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-          >
+            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
             Alter Ego
           </th>
           <th
-            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-          >
+            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
             First Appearance
           </th>
           <th
-            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-          >
+            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
             Powers
           </th>
         </tr>
       </thead>
       <tbody class="bg-white divide-y divide-gray-200">
         @for (hero of heroes; track hero.id) {
-        <tr [routerLink]="['/', hero.id]" class="hover:bg-gray-50">
-          <td class="px-6 py-4 whitespace-nowrap">
-            <div class="text-sm font-medium text-gray-900">{{ hero.name }}</div>
-          </td>
-          <td class="px-6 py-4 whitespace-nowrap">
-            <div class="text-sm text-gray-500">{{ hero.alterEgo }}</div>
-          </td>
-          <td class="px-6 py-4 whitespace-nowrap">
-            <div class="text-sm text-gray-500">{{ hero.firstAppearance }}</div>
-          </td>
-          <td class="px-6 py-4">
-            <div class="flex flex-wrap gap-1">
-              @for (power of hero.powers; track power) {
-              <span
-                class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full"
-              >
-                {{ power }}
-              </span>
-              }
-            </div>
-          </td>
-        </tr>
+          <tr [routerLink]="['/', hero.id]" class="hover:bg-gray-50">
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm font-medium text-gray-900">
+                {{ hero.name }}
+              </div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm text-gray-500">{{ hero.alterEgo }}</div>
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <div class="text-sm text-gray-500">
+                {{ hero.firstAppearance }}
+              </div>
+            </td>
+            <td class="px-6 py-4">
+              <div class="flex flex-wrap gap-1">
+                @for (power of hero.powers; track power) {
+                  <span
+                    class="px-2 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full">
+                    {{ power }}
+                  </span>
+                }
+              </div>
+            </td>
+          </tr>
         }
       </tbody>
     </table>
