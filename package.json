@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "start-server": "json-server --watch db.json",
-    "server": "json-server --watch db.json"
+    "server": "json-server --watch db.json",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -33,13 +34,18 @@
     "@angular/cli": "^19.1.5",
     "@angular/compiler-cli": "^19.1.0",
     "@types/jasmine": "~5.1.0",
+    "husky": "^9.1.7",
     "jasmine-core": "~5.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "lint-staged": "^15.4.3",
     "prettier": "^3.5.0",
     "typescript": "~5.7.2"
+  },
+  "lint-staged": {
+    "*.{js,ts,css,scss,html,md,json}": "prettier --write"
   }
 }
