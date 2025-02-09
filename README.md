@@ -45,3 +45,8 @@ This project is meant to be a training ground, not a production application foll
 Being able not only to use Angular but to fix errors is the first step at mastering it! The next one is to be able to explain what you did!
 
 Share your solution with the community on social media!
+
+### Contributions
+
+> Contributions are welcomed to add new bugs.
+> However the project is not meant to be fixed itself, so bug fixes contributions won't be accepted.
