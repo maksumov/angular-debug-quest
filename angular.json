@@ -87,6 +87,86 @@
           }
         }
       }
+    },
+    "router-qnuvyrif": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/router-qnuvyrif",
+      "sourceRoot": "projects/router-qnuvyrif/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/router-qnuvyrif",
+            "index": "projects/router-qnuvyrif/src/index.html",
+            "browser": "projects/router-qnuvyrif/src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "projects/router-qnuvyrif/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/router-qnuvyrif/public"
+              }
+            ],
+            "styles": ["projects/router-qnuvyrif/src/styles.css"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "router-qnuvyrif:build:production"
+            },
+            "development": {
+              "buildTarget": "router-qnuvyrif:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": ["zone.js", "zone.js/testing"],
+            "tsConfig": "projects/router-qnuvyrif/tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/router-qnuvyrif/public"
+              }
+            ],
+            "styles": ["projects/router-qnuvyrif/src/styles.css"],
+            "scripts": []
+          }
+        }
+      }
     }
   }
 }
