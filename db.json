@@ -71,5 +71,8 @@
         "Combat Skills"
       ]
     }
-  ]
+  ],
+  "config": {
+    "defaultLanguage": "en"
+  }
 }
