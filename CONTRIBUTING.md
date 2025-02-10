@@ -25,7 +25,12 @@ The project might already include a bug you'd like to add so the first step is t
    - Use a descriptive name for your branch
    - Example: `feature/add-routing-bug`
 
-4. **Adding Bugs**
+4. **Run the Schematic**
+
+   - Run the schematic to generate an application
+   - Example: `schematics .:app-generator --scope=forms`
+
+5. **Adding Bugs**
    When contributing new bugs, please ensure they:
 
    - Are related to Angular concepts
@@ -33,7 +38,7 @@ The project might already include a bug you'd like to add so the first step is t
    - Are not security vulnerabilities
    - Are discoverable through debugging
 
-5. **Submit a Pull Request**
+6. **Submit a Pull Request**
    - Provide a clear description of the bug(s) you've added
    - Explain what Angular knowledge is needed to fix it
    - Reference any related issues
