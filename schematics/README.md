@@ -1,28 +1,48 @@
 # Getting Started With Schematics
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+This repository contains schematics for generating Angular applications with pre-configured settings and templates.
 
-### Testing
+## Available Schematics
 
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
+### app-generator
 
-Check the documentation with
+Generates a new Angular application within your workspace with a randomly generated name based on the specified scope.
+
+Usage:
 
 ```bash
-schematics --help
+schematics .:app-generator --scope=<scope>
 ```
+
+Options:
+
+- `scope`: (required) The scope/category of the application. Available options:
+  - `core` - Core Angular functionality
+  - `router` - Router related
+  - `di` - Dependency Injection
+  - `http` - HTTP functionality
+  - `signals` - Signals related
+  - `rxjs` - RxJS functionality
+  - `forms` - Forms related
+  - `ssr` - Server-side rendering
+  - `multi` - Multiple scopes
+
+The generated application will:
+
+- Have a randomly generated name prefixed with the selected scope
+- Use CSS for styling
+- Include Tailwind CSS configuration
+- Be created in the `projects/<app-name>` directory
+
+Example:
+
+```bash
+schematics .:app-generator --scope=core
+# Creates an app like: projects/core-lfiwanfi
+```
+
+## Testing
 
 ### Unit Testing
 
 `npm run test` will run the unit tests, using Jasmine as a runner and test framework.
-
-### Publishing
-
-To publish, simply do:
-
-```bash
-npm run build
-npm publish
-```
-
-That's it!
