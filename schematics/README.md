@@ -25,6 +25,7 @@ Options:
   - `rxjs` - RxJS functionality
   - `forms` - Forms related
   - `ssr` - Server-side rendering
+  - `test` - Test related
   - `multi` - Multiple scopes
 
 The generated application will:
