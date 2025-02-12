@@ -17,6 +17,8 @@ It's completely up to you to choose your strategy and to identify each bug!
 
 Some of them might be easy to spot with a runtime error, but some of them might be tricky and require to understand what the code is aiming for.
 
+> This project is full of bugs on purpose to test your skills on your own fork. It's not meant to be fixed itself.
+
 ## How to play
 
 1. Clone the repository
