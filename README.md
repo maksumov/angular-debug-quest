@@ -22,7 +22,7 @@ Some of them might be easy to spot with a runtime error, but some of them might 
 1. Clone the repository
 2. Run `npm install` to install the dependencies
 3. Run `npm run server` to start the JSON server
-4. Run `ng serve` to start the application
+4. Run `npx nx serve angular-debug-quest` to start the application
 5. Open the application in your browser
 6. Fix the bugs
 
