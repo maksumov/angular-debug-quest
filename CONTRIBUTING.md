@@ -20,10 +20,16 @@ The project might already include a bug you'd like to add so the first step is t
    - Create your own fork of the project
    - Clone it locally
 
-3. **Create a New Branch**
+3. **Create a new application**
 
-   - Use a descriptive name for your branch
-   - Example: `feature/add-routing-bug`
+   Run `npm run generate:app` to create an isolated playground for the bug you'd like to add.
+
+   It'll create 2 folders:
+
+   - `apps/{name}` with a basic Angular application
+   - `apps/{name}-e2e` with a Playwright e2e test
+
+   The name is randomly generated to avoid conflicts and not to spoil the learning experience.
 
 4. **Adding Bugs**
    When contributing new bugs, please ensure they:

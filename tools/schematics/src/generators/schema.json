@@ -1,18 +1,7 @@
 {
   "$schema": "https://json-schema.org/schema",
   "$id": "AppGenerator",
-  "title": "",
+  "title": "Generates an angular application with tailwindcss, Playwright and a custom random name",
   "type": "object",
-  "properties": {
-    "name": {
-      "type": "string",
-      "description": "",
-      "$default": {
-        "$source": "argv",
-        "index": 0
-      },
-      "x-prompt": "What name would you like to use?"
-    }
-  },
-  "required": ["name"]
+  "properties": {}
 }

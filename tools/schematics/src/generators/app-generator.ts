@@ -26,15 +26,20 @@ export async function appGeneratorGenerator(
   tree: Tree,
   options: AppGeneratorGeneratorSchema
 ) {
+  const name = `${generateRandomString()}`;
+
   await applicationGenerator(tree, {
-    name: `${generateRandomString()}`,
-    directory: 'apps',
+    name,
+    directory: `apps/${name}`,
     linter: Linter.EsLint,
     unitTestRunner: UnitTestRunner.Jest,
     e2eTestRunner: E2eTestRunner.Playwright,
-    addTailwind: true,
+    addTailwind: false,
     style: 'css',
   });
+
+  generateFiles(tree, path.join(__dirname, 'files'), `apps/${name}`, options);
+  await formatFiles(tree);
 }
 
 export default appGeneratorGenerator;

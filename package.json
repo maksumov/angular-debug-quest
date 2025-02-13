@@ -9,7 +9,8 @@
     "test": "nx test",
     "start-server": "json-server --watch db.json",
     "server": "json-server --watch db.json",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate:app": "nx generate app-generator"
   },
   "private": true,
   "dependencies": {
