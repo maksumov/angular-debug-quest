@@ -1,0 +1,34 @@
+---
+description: Global Angular application rules
+globs: apps/*[!-]/**
+---
+
+# Global Angular application rules
+
+## Styling
+
+- use TailwindCSS whenever it's possible
+- do not use any other UI library
+- use css, not scss or less
+
+## Third-party libraries
+
+- only use libraries defined in [package.json](mdc:package.json)
+
+## Formatting
+
+- follow [.prettierrc.json](mdc:.prettierrc.json) rules
+
+## Coding rules
+
+### named parameters pattern
+
+Follow the `named parameters` pattern for parameters.
+
+```ts
+// DO NOT
+function getScripts(searchTerm: string; limit: number) {}
+
+// DO
+function getScripts(options: {searchTerm: string; limit: number}) {}
+```
