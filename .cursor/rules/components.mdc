@@ -1,7 +1,0 @@
----
-description: 
-globs: apps/*[!-]/**/*.component.ts
----
-## Component Metadata
-
-- do not specifiy `standalone: true`
