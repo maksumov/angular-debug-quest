@@ -1,5 +1,5 @@
 <p align="center">
- <img width="60%" height="60%" src="./public/angular-debug-quest.png" alt="project logo">
+ <img style="border-radius: 10px;" width="100%" height="100%" src="./public/hero-banner.png" alt="project logo">
 </p>
 
 # Angular Debug Quest
