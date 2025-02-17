@@ -38,7 +38,9 @@ export async function appGeneratorGenerator(
     style: 'css',
   });
 
-  generateFiles(tree, path.join(__dirname, 'files'), `apps/${name}`, options);
+  generateFiles(tree, path.join(__dirname, 'files'), `apps/${name}`, {
+    name,
+  });
   await formatFiles(tree);
 }
 
