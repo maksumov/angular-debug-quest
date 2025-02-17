@@ -1,0 +1,77 @@
+<div class="container mx-auto px-4 py-8">
+  <!-- Profile Header -->
+  <div class="flex flex-col md:flex-row items-center gap-8 mb-8">
+    <!-- Profile Image -->
+    <div class="w-32 h-32 rounded-full overflow-hidden">
+      <img
+        src="https://via.placeholder.com/128"
+        alt="Profile picture"
+        class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Profile Info -->
+    <div class="flex-1">
+      <h1 class="text-2xl font-bold mb-2">John Doe</h1>
+      <p class="text-gray-600 mb-4">Software Developer</p>
+      <div class="flex gap-4">
+        <button
+          class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+          Edit Profile
+        </button>
+        <button
+          class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50">
+          Share Profile
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+    <div class="bg-white p-4 rounded-lg shadow">
+      <h3 class="font-semibold text-gray-600">Projects</h3>
+      <p class="text-2xl font-bold">23</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <h3 class="font-semibold text-gray-600">Following</h3>
+      <p class="text-2xl font-bold">142</p>
+    </div>
+    <div class="bg-white p-4 rounded-lg shadow">
+      <h3 class="font-semibold text-gray-600">Followers</h3>
+      <p class="text-2xl font-bold">305</p>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="bg-white p-6 rounded-lg shadow mb-8">
+    <h2 class="text-xl font-bold mb-4">About</h2>
+    <p class="text-gray-600">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </p>
+  </div>
+
+  <!-- Recent Activity -->
+  <div class="bg-white p-6 rounded-lg shadow">
+    <h2 class="text-xl font-bold mb-4">Recent Activity</h2>
+    <div class="space-y-4">
+      <div class="flex items-center gap-4">
+        <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+        <p class="text-gray-600">Updated project "Angular Dashboard"</p>
+        <span class="text-sm text-gray-400">2 hours ago</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+        <p class="text-gray-600">Joined team "Frontend Developers"</p>
+        <span class="text-sm text-gray-400">1 day ago</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+        <p class="text-gray-600">Created new repository</p>
+        <span class="text-sm text-gray-400">3 days ago</span>
+      </div>
+    </div>
+  </div>
+</div>
