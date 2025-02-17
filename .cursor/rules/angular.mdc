@@ -8,6 +8,10 @@ globs: apps/*[!-]/**
 - use `declarative` over `imperative` pattern
 - always add type signature to functions
 
+## Javascript
+
+- prefer `const` over `let` when possible
+
 ## Typescript
 
 - use `type` over `interface`
@@ -37,6 +41,11 @@ globs: apps/*[!-]/**
 - use `subscribe()` callback rather than `tap()` to update local state if `.subscribe()` is used
 - use the `async` pipe over a `.subscribe()` in components for data meant to be used in the template only
 - do not use `.subscribe()` in services, expose an Observable for the consumer to subscribe
+
+## Routing
+
+- lazy load each route
+- use `withComponentInputBinding`
 
 ## Styling
 
