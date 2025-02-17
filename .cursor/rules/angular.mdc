@@ -3,7 +3,7 @@ description: Global Angular application rules
 globs: apps/*[!-]/**
 ---
 
-# Angular Cursor rules
+# Angular v19 Cursor rules
 
 - use `declarative` over `imperative` pattern
 - always add type signature to functions
