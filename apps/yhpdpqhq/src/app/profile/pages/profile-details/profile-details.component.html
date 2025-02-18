@@ -1,0 +1,60 @@
+<div class="container mx-auto px-4 py-8">
+  <div class="flex gap-8">
+    <!-- Main profile section -->
+    <div class="flex-1">
+      @if (profile$ | async; as profile) {
+        <div class="bg-white rounded-lg shadow p-6">
+          <h1 class="text-2xl font-bold mb-6">Profile Details</h1>
+
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <span class="w-32 text-gray-600">Name:</span>
+              <span class="font-medium">{{ profile.name }}</span>
+            </div>
+
+            <div class="flex items-center">
+              <span class="w-32 text-gray-600">Team:</span>
+              <span class="font-medium">{{ profile.team }}</span>
+            </div>
+
+            <div class="flex items-center">
+              <span class="w-32 text-gray-600">Email:</span>
+              <a
+                [href]="'mailto:' + profile.email"
+                class="text-blue-600 hover:text-blue-800">
+                {{ profile.email }}
+              </a>
+            </div>
+          </div>
+        </div>
+      } @else {
+        <div class="flex justify-center items-center h-48">
+          <span class="text-gray-500">Loading profile...</span>
+        </div>
+      }
+    </div>
+
+    <!-- Team members section -->
+    <div class="w-80">
+      <h2 class="text-xl font-bold mb-4">Team Members</h2>
+
+      @if (teamMembers$ | async; as teamMembers) {
+        <ul class="space-y-3">
+          @for (member of teamMembers; track member.id) {
+            <li
+              [routerLink]="['/profiles', member.id]"
+              class="flex items-center p-3 bg-white shadow-sm hover:shadow-md transition-shadow rounded-lg cursor-pointer border border-gray-100">
+              <div>
+                <div class="font-medium">{{ member.name }}</div>
+              </div>
+            </li>
+          }
+        </ul>
+      } @else {
+        <div class="text-gray-500 text-center py-4">
+          Loading team members...
+        </div>
+      }
+    </div>
+  </div>
+</div>

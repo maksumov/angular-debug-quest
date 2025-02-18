@@ -1,0 +1,25 @@
+<div class="p-6">
+  <h1 class="text-2xl font-bold mb-6">Members</h1>
+
+  <div class="grid gap-4">
+    @for (profile of profiles$ | async; track profile.id) {
+      <div
+        [routerLink]="['/profiles', profile.id]"
+        class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow cursor-pointer border border-gray-200">
+        <div class="flex justify-between items-start">
+          <div>
+            <h2 class="text-lg font-semibold">{{ profile.name }}</h2>
+            <p class="text-gray-600">{{ profile.team }}</p>
+          </div>
+          <div class="text-sm text-gray-500">
+            <a
+              [href]="'mailto:' + profile.email"
+              class="text-blue-600 hover:text-blue-800">
+              {{ profile.email }}
+            </a>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>
