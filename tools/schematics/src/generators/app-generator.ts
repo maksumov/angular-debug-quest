@@ -12,8 +12,9 @@ import {
   UnitTestRunner,
 } from '@nx/angular/generators';
 import { Linter } from '@nx/eslint';
+import { applicationGenerator as nestApplicationGenerator } from '@nx/nest';
 
-function generateRandomString(length: number = 8): string {
+function generateRandomString(length = 8): string {
   const characters = 'abcdefghijklmnopqrstuvwxyz';
   let result = '';
   for (let i = 0; i < length; i++) {
@@ -36,12 +37,39 @@ export async function appGeneratorGenerator(
     e2eTestRunner: E2eTestRunner.Playwright,
     addTailwind: false,
     style: 'css',
+    inlineStyle: true,
+    skipTests: true,
   });
 
-  generateFiles(tree, path.join(__dirname, 'files'), `apps/${name}`, {
+  generateFiles(tree, path.join(__dirname, 'files/front'), `apps/${name}`, {
     name,
   });
   await formatFiles(tree);
+
+  tree.delete(`apps/${name}/src/app/nx-welcome.component.ts`);
+  tree.delete(`apps/${name}/src/app/app.component.css`);
+  tree.delete(`apps/${name}/src/app/app.component.spec.ts`);
+
+  if (options.generateApi) {
+    await nestApplicationGenerator(tree, {
+      name: `${name}-api`,
+      directory: `apps/${name}-api`,
+      linter: Linter.EsLint,
+      unitTestRunner: UnitTestRunner.Jest,
+      frontendProject: name,
+      strict: true,
+      e2eTestRunner: 'none',
+    });
+
+    generateFiles(
+      tree,
+      path.join(__dirname, 'files/back'),
+      `apps/${name}-api`,
+      {
+        name,
+      }
+    );
+  }
 }
 
 export default appGeneratorGenerator;

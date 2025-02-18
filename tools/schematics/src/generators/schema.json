@@ -3,5 +3,11 @@
   "$id": "AppGenerator",
   "title": "Generates an angular application with tailwindcss, Playwright and a custom random name",
   "type": "object",
-  "properties": {}
+  "properties": {
+    "generateApi": {
+      "type": "boolean",
+      "description": "Generate a NestJS API for the application",
+      "default": false
+    }
+  }
 }

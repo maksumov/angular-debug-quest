@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="768.0px" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 768 768" width="768.0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="707.747" id="Filter" width="502.526" x="230.197" y="47.4471">
+<feDropShadow dx="10" dy="17.3205" flood-color="#000000" flood-opacity="0.7" in="SourceGraphic" result="Shadow" stdDeviation="10"/>
+</filter>
+<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="709.002" id="Filter_2" width="503.453" x="49.2387" y="46.1575">
+<feDropShadow dx="10" dy="17.3205" flood-color="#000000" flood-opacity="0.703" in="SourceGraphic" result="Shadow" stdDeviation="10"/>
+</filter>
+</defs>
+<g id="Sans-titre">
+<path d="M567.781 55.2858C564.544 54.6652 560.988 55.8414 558.866 59.1203L482.818 176.554C482.818 176.554 491.689 162.756 473.876 190.513C456.062 218.27 411.581 287.583 411.581 287.583C410.98 288.518 410.571 289.52 410.207 290.506C368.693 351.331 308.181 444.644 305.837 448.284L249.959 535.152C247.237 539.384 248.084 544.981 251.937 548.218L443.547 709.205C446.253 711.479 449.958 712.155 453.293 710.984L689.417 628.057C694.165 626.39 696.934 621.453 695.882 616.531L673.607 512.367C672.866 508.907 646.687 388.449 632.39 329.98C632.343 329.277 632.372 328.566 632.219 327.849L604.748 198.805L574.698 62.1496C573.939 58.3184 571.018 55.9063 567.781 55.2858Z" fill="#237dad" fill-rule="nonzero" filter="url(#Filter)" stroke="none"/>
+<path d="M200.507 53.9516C197.253 54.4767 194.314 56.7995 193.443 60.6067L162.196 196.979C162.196 196.979 165.806 180.978 158.572 213.156C151.339 245.335 133.275 325.687 133.275 325.687C133.031 326.772 132.99 327.853 132.985 328.904C114.804 400.266 89.895 508.657 88.9397 512.88L66.1785 613.628C65.0695 618.537 67.7813 623.505 72.51 625.228L307.656 710.887C310.977 712.097 314.69 711.463 317.422 709.221L510.886 550.467C514.777 547.274 515.688 541.688 513.015 537.424L456.424 447.18C454.544 444.183 388.706 339.967 355.256 289.927C354.971 289.281 354.755 288.604 354.365 287.982L284.375 176.142L209.355 58.0327C207.33 54.6929 203.761 53.4264 200.507 53.9516Z" fill="#19c2dc" fill-rule="nonzero" filter="url(#Filter_2)" stroke="none"/>
+</g>
+</svg>
