@@ -28,7 +28,6 @@
     "@nestjs/sequelize": "^11.0.0",
     "@tailwindcss/postcss": "^4.0.3",
     "axios": "^1.6.0",
-    "json-server": "^1.0.0-beta.3",
     "postcss": "^8.5.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~7.8.0",
